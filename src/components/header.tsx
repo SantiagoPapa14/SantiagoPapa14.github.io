@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
               {"Mucho más que seguridad"}
             </p>
             <a
-              href="#features"
+              href="#ofrecemos"
               className="inline-block font-raleway uppercase text-white bg-gradient-to-r from-[#5ca9fb] to-[#6372ff] px-8 py-4 rounded-full text-sm md:text-base font-medium transition-all duration-500 hover:bg-[#6372ff]"
             >
               Ver más

@@ -3,7 +3,7 @@ import React from "react";
 
 export const Instalaciones: React.FC = () => {
   return (
-    <div id="portfolio" className="text-center mb-24">
+    <div id="instalaciones" className="text-center mb-24">
       <div className="container mx-auto px-4">
         <div className="section-title mb-16">
           <h2 className="font-raleway text-4xl font-extrabold uppercase text-gray-900 mb-5 relative pb-4">

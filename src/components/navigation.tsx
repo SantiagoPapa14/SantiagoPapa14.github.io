@@ -16,7 +16,7 @@ export const Navigation: React.FC = () => {
         <div className="flex justify-center items-center">
           <a
             className="text-3xl font-bold uppercase text-gray-800 mr-24"
-            href="#page-top"
+            href="#header"
           >
             Dashhome
           </a>
@@ -35,7 +35,7 @@ export const Navigation: React.FC = () => {
           {/* Navigation Links (Hidden on mobile, visible on larger screens) */}
           <div className="hidden md:flex space-x-8">
             <a
-              href="#features"
+              href="#ofrecemos"
               className="text-gray-700 uppercase font-normal hover:text-blue-500 transition-all duration-200"
             >
               Qué ofrecemos
@@ -82,7 +82,7 @@ export const Navigation: React.FC = () => {
           <ul className="flex flex-col space-y-2 mt-4">
             <li>
               <a
-                href="#features"
+                href="#ofrecemos"
                 className="text-gray-700 uppercase text-sm font-normal py-2 hover:text-blue-500 transition-all duration-200"
               >
                 Qué ofrecemos

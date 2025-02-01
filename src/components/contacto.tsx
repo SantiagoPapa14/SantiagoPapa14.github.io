@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export const Contacto: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault(); // Prevent the default form submission
+
+    const form = event.currentTarget;
+
+    if (form.reportValidity()) {
+      // If the form is valid, show the popup
+      setIsVisible(true);
+
+      // Optionally, you can submit the form programmatically
+      form.submit();
+    }
+  };
+
   return (
     <div>
       <div
@@ -22,7 +38,12 @@ export const Contacto: React.FC = () => {
                   que tengas ¡Te contactaremos a la brevedad!
                 </p>
               </div>
-              <form name="sentMessage">
+              <form
+                name="sentMessage"
+                action="https://formspree.io/f/xbldykoa"
+                method="POST"
+                onSubmit={handleSubmit} // Use the custom submit handler
+              >
                 <div className="flex flex-wrap -mx-3 mb-6">
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <div className="form-group">
@@ -68,6 +89,17 @@ export const Contacto: React.FC = () => {
                 >
                   Enviar
                 </button>
+                {isVisible && (
+                  <div
+                    style={{
+                      padding: "10px",
+                      border: "1px solid #ccc",
+                      marginTop: "10px",
+                    }}
+                  >
+                    Mensaje enviado!
+                  </div>
+                )}
               </form>
             </div>
           </div>

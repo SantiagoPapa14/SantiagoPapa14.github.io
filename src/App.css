@@ -1,2 +1,13 @@
 @import "tailwindcss";
-
+html {
+  scroll-behavior: smooth;
+}
+#instalaciones{
+  scroll-margin-top: 80px; /* Adjust this value to match your header height */
+}
+#ofrecemos{
+  scroll-margin-top: 30px; /* Adjust this value to match your header height */
+}
+#team{
+  scroll-margin-top: 100px; /* Adjust this value to match your header height */
+}

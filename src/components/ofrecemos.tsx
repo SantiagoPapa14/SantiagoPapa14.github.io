@@ -9,7 +9,7 @@ import {
 
 export const Ofrecemos: React.FC = () => {
   return (
-    <div id="features" className="text-center py-16 bg-[#f6f6f6]">
+    <div id="ofrecemos" className="text-center py-16 bg-[#f6f6f6]">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto mb-16">
           <h2 className="relative uppercase font-bold mb-5 text-4xl text-gray-800 after:content-[''] after:absolute after:bottom-[-16px] after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-gradient-to-r after:from-blue-500 after:to-indigo-500">
