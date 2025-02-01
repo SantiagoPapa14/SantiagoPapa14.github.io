@@ -36,6 +36,49 @@ export const Instalaciones: React.FC = () => {
               smallImage="/img/ReggiPatio.jpg"
             />
           </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <Image
+              title="Instalacion Ejemplo 1"
+              largeImage="/img/SolerPuerta.jpg"
+              smallImage="/img/SolerPuerta.jpg"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <Image
+              title="Instalacion Ejemplo 1"
+              largeImage="/img/NVR1.jpg"
+              smallImage="/img/NVR1.jpg"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <Image
+              title="Instalacion Ejemplo 1"
+              largeImage="/img/SolerCalle.jpg"
+              smallImage="/img/SolerCalle.jpg"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <Image
+              title="Instalacion Ejemplo 1"
+              largeImage="/img/SolerCocina.jpg"
+              smallImage="/img/SolerCocina.jpg"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <Image
+              title="Instalacion Ejemplo 1"
+              largeImage="/img/ReggiArbolExpanded.jpg"
+              smallImage="/img/ReggiArbolExpanded.jpg"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <Image
+              title="Instalacion Ejemplo 1"
+              largeImage="/img/SolerAfuera.jpg"
+              smallImage="/img/SolerAfuera.jpg"
+            />
+          </div>
         </div>
       </div>
     </div>
