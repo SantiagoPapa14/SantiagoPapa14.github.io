@@ -1,4 +1,3 @@
-import { Image } from "./image";
 import React from "react";
 
 export const Instalaciones: React.FC = () => {
@@ -16,67 +15,88 @@ export const Instalaciones: React.FC = () => {
         </div>
         <div className="w-full flex flex-wrap justify-center gap-1">
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <Image
-              title="Instalacion Ejemplo 1"
-              largeImage="/img/ReggiAdelante.jpg"
-              smallImage="/img/ReggiAdelante.jpg"
+            <img
+              src="/img/ReggiAdelante.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
             />
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <Image
-              title="Instalacion Ejemplo 1"
-              largeImage="/img/ReggiAtras.jpg"
-              smallImage="/img/ReggiAtras.jpg"
+            <img
+              src="/img/ReggiAtras.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
             />
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <Image
-              title="Instalacion Ejemplo 1"
-              largeImage="/img/ReggiPatio.jpg"
-              smallImage="/img/ReggiPatio.jpg"
+            <img
+              src="/img/ReggiPatio.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
             />
           </div>
 
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <Image
-              title="Instalacion Ejemplo 1"
-              largeImage="/img/SolerPuerta.jpg"
-              smallImage="/img/SolerPuerta.jpg"
+            <img
+              src="/img/SolerPuerta.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
             />
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <Image
-              title="Instalacion Ejemplo 1"
-              largeImage="/img/NVR1.jpg"
-              smallImage="/img/NVR1.jpg"
+            <img
+              src="/img/NVR1.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
             />
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <Image
-              title="Instalacion Ejemplo 1"
-              largeImage="/img/SolerCalle.jpg"
-              smallImage="/img/SolerCalle.jpg"
+            <img
+              src="/img/SolerCalle.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
             />
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <Image
-              title="Instalacion Ejemplo 1"
-              largeImage="/img/SolerCocina.jpg"
-              smallImage="/img/SolerCocina.jpg"
+            <img
+              src="/img/FacuSWITCH.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
             />
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <Image
-              title="Instalacion Ejemplo 1"
-              largeImage="/img/ReggiArbolExpanded.jpg"
-              smallImage="/img/ReggiArbolExpanded.jpg"
+            <img
+              src="/img/FacuMESA.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
             />
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <Image
-              title="Instalacion Ejemplo 1"
-              largeImage="/img/SolerAfuera.jpg"
-              smallImage="/img/SolerAfuera.jpg"
+            <img
+              src="/img/FacuPC.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <img
+              src="/img/SolerCocina.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <img
+              src="/img/ReggiArbolExpanded.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <img
+              src="/img/SolerAfuera.jpg"
+              alt="Instalacion Ejemplo 1"
+              className="w-full h-auto object-cover aspect-[4/3]"
             />
           </div>
         </div>
