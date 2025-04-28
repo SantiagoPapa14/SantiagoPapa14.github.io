@@ -5,17 +5,29 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 export const Contacto: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); // Prevent the default form submission
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Prevent the default form submission
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
 
-    const form = event.currentTarget;
-
-    if (form.reportValidity()) {
-      // If the form is valid, show the popup
-      setIsVisible(true);
-
-      // Optionally, you can submit the form programmatically
-      form.submit();
+    const data = Object.fromEntries(formData.entries());
+    try {
+      const response = await fetch("https://forms.semantic.com.ar/dashhome", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
+        console.log("Formulario enviado con éxito");
+        setIsVisible(true);
+        form.reset();
+      } else {
+        console.error("Error al enviar el formulario");
+      }
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
     }
   };
 
