@@ -30,7 +30,7 @@ export const Team: React.FC = () => {
                 <h4 className="text-xl font-semibold text-gray-800">
                   Santiago Papa
                 </h4>
-                <p className="text-gray-600">Ingeniero en sistemas</p>
+                <p className="text-gray-600">Ingeniería Informática</p>
               </div>
             </div>
           </div>
